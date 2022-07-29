@@ -3,7 +3,7 @@ import os, csv
 
 # create path to read from and write to
 csvpath = os.path.join('Resources', 'budget_data.csv')
-txtpath = 'analysis.txt'
+txtpath = os.path.join('analysis','analysis.txt')
 
 # open csv file
 with open(csvpath, 'r') as csvfile:
@@ -23,7 +23,6 @@ with open(csvpath, 'r') as csvfile:
         
         # convert the change of budget from string to int
         change = int(line[1])
-        print(change)
 
         # add 1 to total month while reading each line
         total_months += 1

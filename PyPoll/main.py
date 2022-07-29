@@ -3,7 +3,7 @@ import csv, os
 
 # create paths for files to read and write
 csvpath = os.path.join('Resources','election_data.csv')
-txtpath = 'analysis.txt'
+txtpath = os.path.join('analysis','analysis.txt')
 
 with open(csvpath) as csvfile:
     # create a csv reader for the file
